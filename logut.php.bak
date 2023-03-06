@@ -1,0 +1,8 @@
+<?php
+
+require ("config.php");
+session_start();
+mysqli_commit($con);
+session_destroy();
+header("location:login.php");
+?>
